@@ -44,6 +44,11 @@ section {
 .formContainer p {
   margin-bottom: 15px;
 }
+@media screen and (max-width: 600px) {
+  .formContainer {
+    max-width: 100%;
+  }
+}
 
 .form input,
 .form select {
@@ -79,6 +84,11 @@ footer {
 .picture img {
   width: 100%;
 }
+@media screen and (max-width: 600px) {
+  .picture {
+    margin-bottom: 20px;
+  }
+}
 
 .description {
   color: #fff;
@@ -93,6 +103,17 @@ footer {
 }
 .description h3 {
   font-size: 24px;
+}
+@media screen and (max-width: 600px) {
+  .description h3 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .description {
+    display: block;
+    max-width: 80%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

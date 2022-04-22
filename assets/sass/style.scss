@@ -3,6 +3,12 @@
   margin: 0px;
   box-sizing: border-box;
 }
+@mixin mobile {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #000;
@@ -40,6 +46,9 @@ section {
   p {
     margin-bottom: 15px;
   }
+  @include mobile {
+    max-width: 100%;
+  }
 }
 
 .form {
@@ -76,6 +85,9 @@ footer {
   img {
     width: 100%;
   }
+  @include mobile {
+    margin-bottom: 20px;
+  }
 }
 .description {
   color: #fff;
@@ -89,5 +101,12 @@ footer {
   }
   h3 {
     font-size: 24px;
+    @include mobile {
+      text-align: center;
+    }
+  }
+  @include mobile {
+    display: block;
+    max-width: 80%;
   }
 }
